@@ -1,0 +1,92 @@
+//sizes
+$full-wrapper: 940px;
+$small-wrapper: 100%;
+
+// font stacks
+$title-font: 'Raleway', sans-serif;
+$body-font: 'Lato', sans-serif;
+
+// global colors
+$magic-purple: #6e67ad;
+$bright-magic-purple: #8781bd;
+$gray-text: #545454;
+$light-gray-text: #7c7c7c;
+
+// menu
+$menu-bg: #06061b;
+$menu-current: #262630;
+$menu-hover: #161626;
+$menu-text: #fff;
+$menu-border: #353443;
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: $menu-text;
+}
+
+HTML, BODY {
+  font-family: $body-font;
+  padding-top: 50px;
+}
+H1, H2, H3, H4 {
+  font-family: $title-font;
+  color: $gray-text;
+  em {
+    color: $magic-purple;
+    font-style: normal;
+    font-weight: 500;
+  }
+}
+
+nav.navbar {
+  height:90px;
+}
+.navbar-inverse {
+    background-color: $menu-bg;
+    border-bottom: 1px solid $menu-border;
+}
+.nav.navbar-nav{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    border-left: 1px solid #353443;
+    li{
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      border-right: 1px solid #353443;
+      &.active{
+        background: $menu-current;
+      }
+    }
+    a{
+      display: block;
+      padding: 35px 30px 0 30px;
+      height: 89px;
+      text-decoration: none;
+      vertical-align: middle;
+      color: $menu-text;
+      border-top: 0;
+      font-size: 16px;
+      &:hover{
+        background: $menu-hover;
+        border-bottom: 2px solid $magic-purple;
+      }
+    }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  padding-top: 40px;
+}
+.start {
+  padding: 40px 15px;
+  text-align: center;
+}
