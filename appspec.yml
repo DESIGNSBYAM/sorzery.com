@@ -85,7 +85,7 @@ permissions:
 #   in the script specified in "location".
 hooks:
    BeforeInstall:
-    - location: restartserver.sh
+    - location: BeforeInstall.sh
       timeout: 60
       runas: root
 # During the AfterInstall deployment lifecycle event, run the commands 
