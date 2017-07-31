@@ -1,2 +1,2 @@
-# sorzery.com
-Sorzery Web Solutions
+# Sorzery
+Ark-La-Tex's best premium option for online marketing solutions.
